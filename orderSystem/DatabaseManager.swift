@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-class DBInit
+class DatabaseManager
 {
-    static func DBInit()
+    static func DatabaseManager()
     {
         let sqlite = SQLiteManager.sharedInstance
         if !sqlite.opendDB() {return}
@@ -413,67 +413,67 @@ class DBInit
               }
         //添加图片
         let image1 = UIImage(named: "1")
-        ImageDal.SaveImage(id: 1, img: image1)
+        ImageManager.SaveImage(id: 1, img: image1)
         
         let image2 = UIImage(named: "2")
-        ImageDal.SaveImage(id: 2, img: image2)
+        ImageManager.SaveImage(id: 2, img: image2)
         
         let image3 = UIImage(named: "3")
-        ImageDal.SaveImage(id: 3, img: image3)
+        ImageManager.SaveImage(id: 3, img: image3)
         
         let image4 = UIImage(named: "4")
-        ImageDal.SaveImage(id: 4, img: image4)
+        ImageManager.SaveImage(id: 4, img: image4)
         
         let image5 = UIImage(named: "5")
-        ImageDal.SaveImage(id: 5, img: image5)
+        ImageManager.SaveImage(id: 5, img: image5)
         
         let image6 = UIImage(named: "6")
-        ImageDal.SaveImage(id: 6, img: image6)
+        ImageManager.SaveImage(id: 6, img: image6)
         
         let image7 = UIImage(named: "7")
-        ImageDal.SaveImage(id: 7, img: image7)
+        ImageManager.SaveImage(id: 7, img: image7)
         
         let image8 = UIImage(named: "8")
-        ImageDal.SaveImage(id: 8, img: image8)
+        ImageManager.SaveImage(id: 8, img: image8)
         
         let image9 = UIImage(named: "9")
-        ImageDal.SaveImage(id: 9, img: image9)
+        ImageManager.SaveImage(id: 9, img: image9)
         
         let image10 = UIImage(named: "10")
-        ImageDal.SaveImage(id: 10, img: image10)
+        ImageManager.SaveImage(id: 10, img: image10)
         
         let image11 = UIImage(named: "11")
-        ImageDal.SaveImage(id: 11, img: image11)
+        ImageManager.SaveImage(id: 11, img: image11)
         
         let image12 = UIImage(named: "12")
-        ImageDal.SaveImage(id: 12, img: image12)
+        ImageManager.SaveImage(id: 12, img: image12)
         
         let image13 = UIImage(named: "13")
-        ImageDal.SaveImage(id: 13, img: image13)
+        ImageManager.SaveImage(id: 13, img: image13)
         
         let image14 = UIImage(named: "14")
-        ImageDal.SaveImage(id: 14, img: image14)
+        ImageManager.SaveImage(id: 14, img: image14)
         
         let image15 = UIImage(named: "15")
-        ImageDal.SaveImage(id: 15, img: image15)
+        ImageManager.SaveImage(id: 15, img: image15)
         
         let image16 = UIImage(named: "16")
-        ImageDal.SaveImage(id: 16, img: image16)
+        ImageManager.SaveImage(id: 16, img: image16)
         
         let image17 = UIImage(named: "17")
-        ImageDal.SaveImage(id: 17, img: image17)
+        ImageManager.SaveImage(id: 17, img: image17)
         
         let image18 = UIImage(named: "18")
-        ImageDal.SaveImage(id: 18, img: image18)
+        ImageManager.SaveImage(id: 18, img: image18)
         
         let image19 = UIImage(named: "19")
-        ImageDal.SaveImage(id: 19, img: image19)
+        ImageManager.SaveImage(id: 19, img: image19)
         
         let image20 = UIImage(named: "20")
-        ImageDal.SaveImage(id: 20, img: image20)
+        ImageManager.SaveImage(id: 20, img: image20)
         
         let image21 = UIImage(named: "21")
-        ImageDal.SaveImage(id: 21, img: image21)
+        ImageManager.SaveImage(id: 21, img: image21)
         
 
         

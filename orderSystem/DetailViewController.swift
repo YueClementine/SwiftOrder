@@ -38,7 +38,7 @@ class DetailViewController: UIViewController {
                if !sqlite.opendDB() {return}
                let data = sqlite.execQuerySQL(sql: "select * from dishDB where dishName = '"+selectDishName+"';")
                let selectId = data?.first?["id"]
-               image.image = ImageDal.LoadImage(id: selectId as! Int)
+               image.image = ImageManager.LoadImage(id: selectId as! Int)
                super.viewDidLoad()
 
     }

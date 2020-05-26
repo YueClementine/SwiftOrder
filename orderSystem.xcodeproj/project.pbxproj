@@ -16,8 +16,8 @@
 		694682EF2468116C00367772 /* DishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682EE2468116C00367772 /* DishTableViewController.swift */; };
 		694682F72468124A00367772 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 694682F62468124A00367772 /* libsqlite3.tbd */; };
 		694682F92468127700367772 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682F82468127700367772 /* SQLiteManager.swift */; };
-		694682FB2468129100367772 /* DBInit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682FA2468129100367772 /* DBInit.swift */; };
-		694682FD2468136200367772 /* ImageDal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682FC2468136200367772 /* ImageDal.swift */; };
+		694682FB2468129100367772 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682FA2468129100367772 /* DatabaseManager.swift */; };
+		694682FD2468136200367772 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682FC2468136200367772 /* ImageManager.swift */; };
 		69954D35246B9266003DA267 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69954D34246B9266003DA267 /* DetailViewController.swift */; };
 		69954D37246B989F003DA267 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69954D36246B989F003DA267 /* OrderTableViewController.swift */; };
 		69954D3A246B98E8003DA267 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69954D38246B98E8003DA267 /* OrderTableViewCell.swift */; };
@@ -37,8 +37,8 @@
 		694682F22468123400367772 /* Restaurant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Restaurant-Bridging-Header.h"; sourceTree = "<group>"; };
 		694682F62468124A00367772 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		694682F82468127700367772 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
-		694682FA2468129100367772 /* DBInit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBInit.swift; sourceTree = "<group>"; };
-		694682FC2468136200367772 /* ImageDal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDal.swift; sourceTree = "<group>"; };
+		694682FA2468129100367772 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		694682FC2468136200367772 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		69954D34246B9266003DA267 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		69954D36246B989F003DA267 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		69954D38246B98E8003DA267 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
@@ -91,8 +91,8 @@
 				694682E6246810F100367772 /* Info.plist */,
 				694682F22468123400367772 /* Restaurant-Bridging-Header.h */,
 				694682F82468127700367772 /* SQLiteManager.swift */,
-				694682FC2468136200367772 /* ImageDal.swift */,
-				694682FA2468129100367772 /* DBInit.swift */,
+				694682FC2468136200367772 /* ImageManager.swift */,
+				694682FA2468129100367772 /* DatabaseManager.swift */,
 			);
 			path = orderSystem;
 			sourceTree = "<group>";
@@ -180,12 +180,12 @@
 			files = (
 				69954D35246B9266003DA267 /* DetailViewController.swift in Sources */,
 				69954D37246B989F003DA267 /* OrderTableViewController.swift in Sources */,
-				694682FB2468129100367772 /* DBInit.swift in Sources */,
+				694682FB2468129100367772 /* DatabaseManager.swift in Sources */,
 				694682ED2468115E00367772 /* RestTableViewController.swift in Sources */,
 				694682EF2468116C00367772 /* DishTableViewController.swift in Sources */,
 				694682F92468127700367772 /* SQLiteManager.swift in Sources */,
 				69954D3A246B98E8003DA267 /* OrderTableViewCell.swift in Sources */,
-				694682FD2468136200367772 /* ImageDal.swift in Sources */,
+				694682FD2468136200367772 /* ImageManager.swift in Sources */,
 				694682D7246810EE00367772 /* AppDelegate.swift in Sources */,
 				694682D9246810EE00367772 /* SceneDelegate.swift in Sources */,
 			);

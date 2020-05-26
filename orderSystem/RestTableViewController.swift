@@ -11,7 +11,7 @@ import UIKit
 class RestTableViewController: UITableViewController {
 
     override func viewDidLoad() {
-        DBInit.DBInit()
+        DatabaseManager.DatabaseManager()
         super.viewDidLoad()
 
         // Uncomment the following line to preserve selection between presentations

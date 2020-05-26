@@ -10,7 +10,7 @@
 import Foundation
 import UIKit
 
-class ImageDal{
+class ImageManager{
     static func SaveImage(id:Int,img:UIImage?)
     {
         if img == nil {return}
