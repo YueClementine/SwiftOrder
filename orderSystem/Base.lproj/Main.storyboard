@@ -228,7 +228,7 @@
         <!--菜谱-->
         <scene sceneID="bBB-h2-PW4">
             <objects>
-                <navigationController modalTransitionStyle="flipHorizontal" toolbarHidden="NO" id="WkM-8a-jAw" sceneMemberID="viewController">
+                <navigationController modalTransitionStyle="flipHorizontal" id="WkM-8a-jAw" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" title="菜谱" leftItemsSupplementBackButton="YES" id="lEU-6M-gkm">
                         <barButtonItem key="backBarButtonItem" title="返回" id="cGg-Ab-XOT"/>
                     </navigationItem>
@@ -238,7 +238,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5s8-NV-a40">
-                        <rect key="frame" x="0.0" y="759" width="414" height="49"/>
+                        <rect key="frame" x="0.0" y="-54" width="0.0" height="0.0"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </toolbar>
                     <connections>
