@@ -10,7 +10,7 @@ import UIKit
 
 class OrderTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var pic: UIImageView!
+
     @IBOutlet weak var dishName: UILabel!
     @IBOutlet weak var restName: UILabel!
     @IBOutlet weak var price: UILabel!
