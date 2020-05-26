@@ -46,6 +46,7 @@ class DishTableViewController: UITableViewController {
         if !sqlite.opendDB() {return cell}
         let data = sqlite.execQuerySQL(sql: "select * from dishDB where restName = '" + selectRstName + "';")
         cell.textLabel?.text = data?[indexPath.row]["dishName"] as? String
+          cell.imageView?.image = UIImage(named: data?[indexPath.row]["dishName"] as! String)
         sqlite.closeDB()
         return cell
 
@@ -95,7 +96,7 @@ class DishTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "DishtoDetail"
         {
-            let vc = segue.destination as! DetailViewController
+            let vc = segue.destination as! DishDetailViewController
 
             let sqlite = SQLiteManager.sharedInstance
             if !sqlite.opendDB() {return}

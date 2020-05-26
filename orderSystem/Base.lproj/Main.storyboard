@@ -10,11 +10,11 @@
         <!--点餐-->
         <scene sceneID="0hZ-1A-YA4">
             <objects>
-                <tableViewController storyboardIdentifier="RestTableViewController" id="xDB-Gb-yvW" customClass="RestTableViewController" customModule="orderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="RestTableViewController" id="xDB-Gb-yvW" customClass="RestaurantsTableViewController" customModule="orderSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="XMb-MT-dbZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="restCell" id="qFS-f9-48g">
                                 <rect key="frame" x="20" y="55.5" width="374" height="43.5"/>
@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="1531.8840579710145" y="336.83035714285711"/>
         </scene>
-        <!--Detail View Controller-->
+        <!--Dish Detail View Controller-->
         <scene sceneID="sbS-sm-pdC">
             <objects>
-                <viewController id="lBA-qg-kL6" customClass="DetailViewController" customModule="orderSystem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="lBA-qg-kL6" customClass="DishDetailViewController" customModule="orderSystem" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tcW-Lp-eUi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -225,15 +225,22 @@
             </objects>
             <point key="canvasLocation" x="3089.8550724637685" y="-320.08928571428572"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--菜谱-->
         <scene sceneID="bBB-h2-PW4">
             <objects>
-                <navigationController id="WkM-8a-jAw" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="lEU-6M-gkm"/>
+                <navigationController modalTransitionStyle="flipHorizontal" toolbarHidden="NO" id="WkM-8a-jAw" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" title="菜谱" leftItemsSupplementBackButton="YES" id="lEU-6M-gkm">
+                        <barButtonItem key="backBarButtonItem" title="返回" id="cGg-Ab-XOT"/>
+                    </navigationItem>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6J6-zC-xzH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5s8-NV-a40">
+                        <rect key="frame" x="0.0" y="759" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="wX5-L9-YRh" kind="relationship" relationship="rootViewController" id="V16-gQ-6uR"/>
                     </connections>

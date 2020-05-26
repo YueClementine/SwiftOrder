@@ -114,12 +114,12 @@ class OrderTableViewController: UITableViewController,AddOrderDelegate {
         let data = sqlite.execQuerySQL(sql: "select * from orders")
         if(data!.count>0){
         
+         
         cell.restName?.text = data?[indexPath.row]["restName"] as? String
             cell.numb?.text = data?[indexPath.row]["numb"]?.stringValue
             let a = data?[indexPath.row]["price"]?.stringValue
             cell.price?.text = "单价"+a!
         cell.dishName?.text = data?[indexPath.row]["dishName"] as? String
- 
  }
 
         print(cell)

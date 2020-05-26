@@ -23,13 +23,13 @@ class DatabaseManager
                   sqlite.closeDB();
                   return
               }
-       let restaurant1 = "INSERT INTO restaurants(restName) VALUES('面馆');"
-           let restaurant2 = "INSERT INTO restaurants(restName) VALUES('火锅');"
-           let restaurant3 = "INSERT INTO restaurants(restName) VALUES('粤菜');"
-           let restaurant4 = "INSERT INTO restaurants(restName) VALUES('西餐');"
-           let restaurant5 = "INSERT INTO restaurants(restName) VALUES('日料');"
-           let restaurant6 = "INSERT INTO restaurants(restName) VALUES('甜品');"
-           let restaurant7 = "INSERT INTO restaurants(restName) VALUES('快餐');"
+       let restaurant1 = "INSERT INTO restaurants(restName) VALUES('珞珈面馆');"
+           let restaurant2 = "INSERT INTO restaurants(restName) VALUES('信部一食堂');"
+           let restaurant3 = "INSERT INTO restaurants(restName) VALUES('工部清真食堂');"
+           let restaurant4 = "INSERT INTO restaurants(restName) VALUES('桂圆餐厅');"
+           let restaurant5 = "INSERT INTO restaurants(restName) VALUES('海底捞');"
+           let restaurant6 = "INSERT INTO restaurants(restName) VALUES('沙县小吃');"
+           let restaurant7 = "INSERT INTO restaurants(restName) VALUES('汉堡王');"
            
            if !sqlite.execNoneQuerySQL(sql: restaurant1)
            {
@@ -149,34 +149,34 @@ class DatabaseManager
             return
         }
         
-        let dish1 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('面馆','热干面', 4,'手工面、芝麻酱、红油，萝卜丁');"
-        let dish2 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('面馆','炸酱面', 6,'手工面、肉酱');"
-        let dish3 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('面馆','牛肉面', 10,'手工面、牛肉');"
+        let dish1 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('珞珈面馆','海带豆腐面', 4,'豆腐是最能补钙而且易于人体吸收的食品，还有海带，能够美容养颜，常吃对身体很好，于是心血来潮，就泡了许多海带，做了一个这样的海带豆腐汤，感觉汤品中的海带还是挺好吃的，软糯。还有，豆腐只要炒过的，再放入汤里，味道就特别鲜美了，挺好吃的汤面。');"
+        let dish2 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('珞珈面馆','襄阳牛肉面', 16,'襄阳特色牛肉面，牛杂面，牛油面是襄阳人最喜欢的早餐，它特点是这一辣二麻三鲜，味道可口，回味悠长，久食不厌。吃牛肉面时，再喝一碗襄阳黄酒或是襄北豆奶，惬意而舒服。');"
+        let dish3 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('珞珈面馆','豌杂面', 10,'豌杂面归属于重庆面的一种，是重庆的一种地方特色小吃，以豌豆与杂酱为主料，配以葱姜蒜为辅料制作而成，口感润滑，豌豆的软糯与面条的劲道以及杂酱的香甜，令人回味无穷。');"
 
         
-        let dish4 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('火锅','番茄汤底', 20,'番茄，洋葱');"
-        let dish5 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('火锅','肥牛', 25,'冰鲜现切');"
-        let dish6 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('火锅','娃娃菜', 15,'高山小种精选');"
+        let dish4 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('信部一食堂','烤鱼', 20,'烤鱼，一种发源于重庆巫溪县，而发扬于万州的特色美食，在流传过程中，融合腌、烤、炖三种烹饪工艺技术，充分借鉴传统渝菜及重庆火锅用料特点，是口味奇绝、营养丰富的风味小吃。');"
+        let dish5 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('信部一食堂','麻辣小龙虾', 25,'麻辣小龙虾以小龙虾为主材，配以辣椒、花椒和其他香辛料制成。成菜后，色泽红亮，口味辣并鲜香。');"
+        let dish6 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('信部一食堂','牛肉干锅', 35,'制作原料主要有牛肉、尖红、精盐、味精等。色红亮，质软糯，汁浓稠，回味悠长，营养丰富。');"
         
-        let dish7 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('粤菜','虾饺', 22,'水晶虾饺，整虾');"
-        let dish8 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('粤菜','烧腊三拼', 54,'叉烧、烧鸭、烧鹅');"
-        let dish9 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('粤菜','干炒牛河', 24,'正宗广式牛河');"
+        let dish7 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('工部清真食堂','大盘鸡', 30,'主要用料为鸡块和土豆块、四川粉皮，配皮带面烹饪而成。 色彩鲜艳、爽滑麻辣的鸡肉和软糯甜润的土豆，辣中有香、粗中带细，是餐桌上的佳品。');"
+        let dish8 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('工部清真食堂','牛肉拉面', 24,'中国城乡独具地方风味的一种传统面食');"
+        let dish9 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('工部清真食堂','羊肉抓饭', 24,'手抓饭是中亚、西亚地区的菜品，维吾尔语称坡罗（polo）波斯语称帕劳（palaw），土耳其语称皮拉乌（pilav），在我国新疆主要流传于维吾尔、哈萨克、土克曼、乌兹别克等民族中。');"
         
-        let dish10 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('西餐','牛排', 60,'M9和牛');"
-        let dish11 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('西餐','松茸蘑菇汤', 32,'奶油浓汤');"
-        let dish12 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('西餐','俄式列巴', 27,'麦香回味');"
+        let dish10 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('桂圆餐厅','印度飞饼', 60,'“印度飞饼”是一种名小吃，是用调和好的面粉在空中用“飞”的绝技做成，它具有美味可口、浓郁香酥的特点。飞饼（又名印度薄饼），是印度的特色风味美食，其制法用料讲究，特别适合广东人的口味。色、香、味俱全。');"
+        let dish11 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('桂圆餐厅','石锅拌饭', 32,'它的发源地为韩国全罗北道，后来演变为朝鲜半岛的代表性食物。是朝鲜半岛三大名菜');"
+        let dish12 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('桂圆餐厅','铁板炒饭', 27,'铁板炒饭因粒粒松散、碎金闪烁、鲜美可口而著称，辅以火腿、虾仁、鸡蛋等配菜加上独特的工艺配料，绝对是汉堡王饮食中的佳品。');"
         
-        let dish13 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('日料','刺身拼盘', 107,'三文鱼、甜虾，北极贝');"
-        let dish14 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('日料','火炙鳗鱼寿司', 46,'纯手工');"
-        let dish15 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('日料','地狱豚骨拉面', 38,'溏心蛋、极辣');"
+        let dish13 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('海底捞','番茄锅', 107,'番茄锅底,跟平时喝的番茄汤,或者拌面的茄汁相比,最大的特点,就是——浓! ');"
+        let dish14 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('海底捞','麻辣锅', 146,'重庆麻辣火锅起源自明末清初，四川火锅起源稍晚，在道光年间。当时重庆的筵席已有毛肚火锅。');"
+        let dish15 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('海底捞','菌菇锅', 138,'菌菇汤又称干贝杂菇汤，制作简便，容易学会，而且口味好');"
         
-        let dish16 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('甜品','提拉米苏', 45,'手指饼干，马斯卡彭');"
-        let dish17 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('甜品','榴莲千层', 39,'榴莲、奶油，千层饼皮');"
-        let dish18 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('甜品','芒果慕斯', 30,'淡奶油、芒果，吉利丁');"
+        let dish16 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('沙县小吃','葱油面', 15,'葱油面（葱油拌面）是特色传统面食，是苏沪地方非常著名的小吃。');"
+        let dish17 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('沙县小吃','鸡腿饭', 39,'鸡腿很大，酱汁浓郁');"
+        let dish18 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('沙县小吃','螺蛳粉', 10,'香辣无比，经济实惠');"
         
-        let dish19 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('快餐','汉堡', 22,'餐包、生菜，番茄、芝士片，肉饼');"
-        let dish20 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('快餐','炸鸡', 36,'精选全鸡腌制12小时以上');"
-        let dish21 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('快餐','披萨', 79,'自熬番茄酱、马苏里拉芝士');"
+        let dish19 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('汉堡王','汉堡', 22,'餐包、生菜，番茄、芝士片，肉饼');"
+        let dish20 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('汉堡王','炸鸡', 36,'精选全鸡腌制12小时以上');"
+        let dish21 = "INSERT OR REPLACE INTO dishDB(restName,dishName,price,detail) VALUES('汉堡王','薯条', 16,'金黄、酥脆可口');"
         
         if !sqlite.execNoneQuerySQL(sql: dish1)
         {

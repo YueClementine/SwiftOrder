@@ -12,13 +12,13 @@
 		694682E0246810EE00367772 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694682DE246810EE00367772 /* Main.storyboard */; };
 		694682E2246810F100367772 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 694682E1246810F100367772 /* Assets.xcassets */; };
 		694682E5246810F100367772 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 694682E3246810F100367772 /* LaunchScreen.storyboard */; };
-		694682ED2468115E00367772 /* RestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682EC2468115E00367772 /* RestTableViewController.swift */; };
+		694682ED2468115E00367772 /* RestaurantsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682EC2468115E00367772 /* RestaurantsTableViewController.swift */; };
 		694682EF2468116C00367772 /* DishTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682EE2468116C00367772 /* DishTableViewController.swift */; };
 		694682F72468124A00367772 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 694682F62468124A00367772 /* libsqlite3.tbd */; };
 		694682F92468127700367772 /* SQLiteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682F82468127700367772 /* SQLiteManager.swift */; };
 		694682FB2468129100367772 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682FA2468129100367772 /* DatabaseManager.swift */; };
 		694682FD2468136200367772 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694682FC2468136200367772 /* ImageManager.swift */; };
-		69954D35246B9266003DA267 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69954D34246B9266003DA267 /* DetailViewController.swift */; };
+		69954D35246B9266003DA267 /* DishDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69954D34246B9266003DA267 /* DishDetailViewController.swift */; };
 		69954D37246B989F003DA267 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69954D36246B989F003DA267 /* OrderTableViewController.swift */; };
 		69954D3A246B98E8003DA267 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69954D38246B98E8003DA267 /* OrderTableViewCell.swift */; };
 		69954D3B246B98E8003DA267 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69954D39246B98E8003DA267 /* OrderTableViewCell.xib */; };
@@ -32,14 +32,14 @@
 		694682E1246810F100367772 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		694682E4246810F100367772 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		694682E6246810F100367772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		694682EC2468115E00367772 /* RestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTableViewController.swift; sourceTree = "<group>"; };
+		694682EC2468115E00367772 /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
 		694682EE2468116C00367772 /* DishTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishTableViewController.swift; sourceTree = "<group>"; };
 		694682F22468123400367772 /* Restaurant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Restaurant-Bridging-Header.h"; sourceTree = "<group>"; };
 		694682F62468124A00367772 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		694682F82468127700367772 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
 		694682FA2468129100367772 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		694682FC2468136200367772 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
-		69954D34246B9266003DA267 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		69954D34246B9266003DA267 /* DishDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailViewController.swift; sourceTree = "<group>"; };
 		69954D36246B989F003DA267 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		69954D38246B98E8003DA267 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		69954D39246B98E8003DA267 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
@@ -82,9 +82,9 @@
 				694682DE246810EE00367772 /* Main.storyboard */,
 				69954D38246B98E8003DA267 /* OrderTableViewCell.swift */,
 				69954D39246B98E8003DA267 /* OrderTableViewCell.xib */,
-				694682EC2468115E00367772 /* RestTableViewController.swift */,
+				694682EC2468115E00367772 /* RestaurantsTableViewController.swift */,
 				694682EE2468116C00367772 /* DishTableViewController.swift */,
-				69954D34246B9266003DA267 /* DetailViewController.swift */,
+				69954D34246B9266003DA267 /* DishDetailViewController.swift */,
 				69954D36246B989F003DA267 /* OrderTableViewController.swift */,
 				694682E1246810F100367772 /* Assets.xcassets */,
 				694682E3246810F100367772 /* LaunchScreen.storyboard */,
@@ -178,10 +178,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69954D35246B9266003DA267 /* DetailViewController.swift in Sources */,
+				69954D35246B9266003DA267 /* DishDetailViewController.swift in Sources */,
 				69954D37246B989F003DA267 /* OrderTableViewController.swift in Sources */,
 				694682FB2468129100367772 /* DatabaseManager.swift in Sources */,
-				694682ED2468115E00367772 /* RestTableViewController.swift in Sources */,
+				694682ED2468115E00367772 /* RestaurantsTableViewController.swift in Sources */,
 				694682EF2468116C00367772 /* DishTableViewController.swift in Sources */,
 				694682F92468127700367772 /* SQLiteManager.swift in Sources */,
 				69954D3A246B98E8003DA267 /* OrderTableViewCell.swift in Sources */,
