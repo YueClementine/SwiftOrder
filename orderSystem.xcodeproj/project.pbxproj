@@ -34,7 +34,7 @@
 		694682E6246810F100367772 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		694682EC2468115E00367772 /* RestaurantsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsTableViewController.swift; sourceTree = "<group>"; };
 		694682EE2468116C00367772 /* DishTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishTableViewController.swift; sourceTree = "<group>"; };
-		694682F22468123400367772 /* Restaurant-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Restaurant-Bridging-Header.h"; sourceTree = "<group>"; };
+		694682F22468123400367772 /* SQLHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLHeader.h; sourceTree = "<group>"; };
 		694682F62468124A00367772 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		694682F82468127700367772 /* SQLiteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteManager.swift; sourceTree = "<group>"; };
 		694682FA2468129100367772 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 				694682E1246810F100367772 /* Assets.xcassets */,
 				694682E3246810F100367772 /* LaunchScreen.storyboard */,
 				694682E6246810F100367772 /* Info.plist */,
-				694682F22468123400367772 /* Restaurant-Bridging-Header.h */,
+				694682F22468123400367772 /* SQLHeader.h */,
 				694682F82468127700367772 /* SQLiteManager.swift */,
 				694682FC2468136200367772 /* ImageManager.swift */,
 				694682FA2468129100367772 /* DatabaseManager.swift */,
@@ -339,7 +339,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = whu.orderSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "orderSystem/Restaurant-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = orderSystem/SQLHeader.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -358,7 +358,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = whu.orderSystem;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "orderSystem/Restaurant-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = orderSystem/SQLHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
