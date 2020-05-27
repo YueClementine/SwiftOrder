@@ -22,6 +22,9 @@
 		69954D37246B989F003DA267 /* OrderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69954D36246B989F003DA267 /* OrderTableViewController.swift */; };
 		69954D3A246B98E8003DA267 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69954D38246B98E8003DA267 /* OrderTableViewCell.swift */; };
 		69954D3B246B98E8003DA267 /* OrderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69954D39246B98E8003DA267 /* OrderTableViewCell.xib */; };
+		8AEA0BC0247DDBA100F99858 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEA0BBF247DDBA100F99858 /* InfoViewController.swift */; };
+		8AEA0BC2247DEF1800F99858 /* AboutAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEA0BC1247DEF1800F99858 /* AboutAppViewController.swift */; };
+		8AEA0BC4247DF18900F99858 /* OtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AEA0BC3247DF18900F99858 /* OtherViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +46,9 @@
 		69954D36246B989F003DA267 /* OrderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewController.swift; sourceTree = "<group>"; };
 		69954D38246B98E8003DA267 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
 		69954D39246B98E8003DA267 /* OrderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OrderTableViewCell.xib; sourceTree = "<group>"; };
+		8AEA0BBF247DDBA100F99858 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		8AEA0BC1247DEF1800F99858 /* AboutAppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutAppViewController.swift; sourceTree = "<group>"; };
+		8AEA0BC3247DF18900F99858 /* OtherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,9 @@
 				694682F82468127700367772 /* SQLiteManager.swift */,
 				694682FC2468136200367772 /* ImageManager.swift */,
 				694682FA2468129100367772 /* DatabaseManager.swift */,
+				8AEA0BBF247DDBA100F99858 /* InfoViewController.swift */,
+				8AEA0BC1247DEF1800F99858 /* AboutAppViewController.swift */,
+				8AEA0BC3247DF18900F99858 /* OtherViewController.swift */,
 			);
 			path = orderSystem;
 			sourceTree = "<group>";
@@ -179,9 +188,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				69954D35246B9266003DA267 /* DishDetailViewController.swift in Sources */,
+				8AEA0BC0247DDBA100F99858 /* InfoViewController.swift in Sources */,
+				8AEA0BC2247DEF1800F99858 /* AboutAppViewController.swift in Sources */,
 				69954D37246B989F003DA267 /* OrderTableViewController.swift in Sources */,
 				694682FB2468129100367772 /* DatabaseManager.swift in Sources */,
 				694682ED2468115E00367772 /* RestaurantsTableViewController.swift in Sources */,
+				8AEA0BC4247DF18900F99858 /* OtherViewController.swift in Sources */,
 				694682EF2468116C00367772 /* DishTableViewController.swift in Sources */,
 				694682F92468127700367772 /* SQLiteManager.swift in Sources */,
 				69954D3A246B98E8003DA267 /* OrderTableViewCell.swift in Sources */,
