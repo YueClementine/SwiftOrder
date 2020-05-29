@@ -15,33 +15,7 @@ class DatabaseManager
     {
         let sqlite = SQLiteManager.sharedInstance
         if !sqlite.opendDB() {return}
-        //个人信息数据库
-            let createInfoSQL = "CREATE TABLE IF NOT EXISTS information('id' INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " + "'Name' TEXT, 'A' TEXT);"
-                        if !sqlite.execNoneQuerySQL(sql: createInfoSQL)
-                        {
-                            sqlite.closeDB();
-                            return
-                        }
-            let infomation = "INSERT INTO infomation(Name,A) VALUES('岳兵','学号为：2018302080386')"
-          if !sqlite.execNoneQuerySQL(sql: infomation)
-                   {
-                       sqlite.closeDB();
-                       return
-                   }
-            if !sqlite.execNoneQuerySQL(sql: "DELETE FROM information")
-                  {sqlite.closeDB();return}
-                  if !sqlite.execNoneQuerySQL(sql: "DELETE FROM sqlite_sequence WHERE name = 'infomation';")
-                  {sqlite.closeDB() ; return }
-        if !sqlite.execNoneQuerySQL(sql: createInfoSQL)
-                            {
-                                sqlite.closeDB();
-                                return
-                            }
-        if !sqlite.execNoneQuerySQL(sql: infomation)
-                         {
-                             sqlite.closeDB();
-                             return
-                         }
+//      
             
         //餐厅数据库
         let createSQL = "CREATE TABLE IF NOT EXISTS restaurants('id' INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, " + "'restName' TEXT ,  'picture' BLOB );"

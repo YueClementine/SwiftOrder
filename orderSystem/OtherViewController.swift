@@ -13,7 +13,7 @@ class OtherViewController: UIViewController {
     @IBOutlet weak var a: UIImageView!
     @IBOutlet weak var other: UILabel!
     override func viewDidLoad() {
-        other.text = "希望老师能给高分～～～老师辛苦了！"
+        other.text = "希师辛苦了！"
         a.image = UIImage(named: "老师辛苦了")
         super.viewDidLoad()
 
